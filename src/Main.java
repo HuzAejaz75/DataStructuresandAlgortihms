@@ -5,7 +5,7 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
-        Scramble scr = new Scramble();
+       /* Scramble scr = new Scramble();
         scr.isScramble("rtgae","great");
 
         buyandSellStockWithX BX = new buyandSellStockWithX();
@@ -75,7 +75,21 @@ public class Main {
         int[] nums1 = {1, 3};
         int[] nums2 = {2};
         MedianofSortedArrays MS = new MedianofSortedArrays();
-        MS.findMedianSortedArrays(nums1,nums2);
+        MS.findMedianSortedArrays(nums1,nums2);*/
+
+        LR lr = new LR(5);
+        lr.put(1,1);
+        lr.put(2,2);
+        lr.put(3,3);
+        lr.get(1);
+        lr.put(4,4);
+        lr.put(5,5);
+        lr.put(11,11);
+        lr.get(3);
+        lr.get(2);
+
+
+
     }
 }
 /*
