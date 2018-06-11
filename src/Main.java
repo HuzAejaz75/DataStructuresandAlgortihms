@@ -75,7 +75,7 @@ public class Main {
         int[] nums1 = {1, 3};
         int[] nums2 = {2};
         MedianofSortedArrays MS = new MedianofSortedArrays();
-        MS.findMedianSortedArrays(nums1,nums2);*/
+        MS.findMedianSortedArrays(nums1,nums2);
 
         LR lr = new LR(5);
         lr.put(1,1);
@@ -86,7 +86,19 @@ public class Main {
         lr.put(5,5);
         lr.put(11,11);
         lr.get(3);
-        lr.get(2);
+        lr.get(2);*/
+
+       LFUMethod2 cache = new LFUMethod2(2);
+        cache.set(1, 1);
+        cache.set(2, 2);
+        cache.get(1);       // returns 1
+        cache.set(3, 3);    // evicts key 2
+        cache.get(2);       // returns -1 (not found)
+        cache.get(3);       // returns 3.
+        cache.set(4, 4);    // evicts key 1.
+        cache.get(1);       // returns -1 (not found)
+        cache.get(3);       // returns 3
+        cache.get(4);
 
 
 
