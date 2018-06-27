@@ -5,6 +5,26 @@ import java.util.ArrayList;
  */
 public class Main {
     public static void main(String[] args) {
+        TreeNode root = new TreeNode(5);
+        TreeNode one = new TreeNode(3);
+        TreeNode two = new TreeNode(6);
+        TreeNode three = new TreeNode(2);
+        TreeNode four = new TreeNode(4);
+        three.left = null;
+        three.right = null;
+        four.left= null;
+        four.right=null;
+        one.left = three;
+        one.right = four;
+        root.left = one;
+        root.right = two;
+        two.left = null;
+        two.right = null;
+
+        LowestCommonAncestor LCA = new LowestCommonAncestor();
+        LCA.lowestCommonAncestor(root,four,two);
+
+
        /* Scramble scr = new Scramble();
         scr.isScramble("rtgae","great");
 
