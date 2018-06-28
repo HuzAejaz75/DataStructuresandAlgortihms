@@ -7,10 +7,14 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        DutchNationalFlag DNF = new DutchNationalFlag();
+        constructUsingInandPre CUI = new constructUsingInandPre();
+        int[] inorder = {9,3,15,20,2,7,4};
+        int[] preorder = {3,9,20,15,7,2,4};
+        CUI.buildTree(preorder,inorder);
+       /* DutchNationalFlag DNF = new DutchNationalFlag();
         int[] nums = {1,1,1,2,0,0,2};
         System.out.println(Arrays.toString(DNF.sortColors(nums)));
-
+*/
        // ExcelSheetName ESN = new ExcelSheetName();
        // System.out.printf(ESN.convertToTitle(701));
         /*DecodeWays DW = new DecodeWays();
