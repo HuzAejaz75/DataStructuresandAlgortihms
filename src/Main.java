@@ -1,10 +1,29 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by huzaifa.aejaz on 5/18/18.
  */
 public class Main {
     public static void main(String[] args) {
+
+        DutchNationalFlag DNF = new DutchNationalFlag();
+        int[] nums = {1,1,1,2,0,0,2};
+        System.out.println(Arrays.toString(DNF.sortColors(nums)));
+
+       // ExcelSheetName ESN = new ExcelSheetName();
+       // System.out.printf(ESN.convertToTitle(701));
+        /*DecodeWays DW = new DecodeWays();
+        DW.numDecodings("11245");*/
+        /*SubtractBinary Sb = new SubtractBinary();
+        System.out.println(Sb.subtract("1","110"));
+        int[] nums = {-4,-5};
+        NumArray NA = new NumArray(nums);
+        NA.sumRange(0,0);
+        NA.sumRange(1,1);
+        NA.sumRange(0,1);*/
+
+        /*
         TreeNode root = new TreeNode(5);
         TreeNode one = new TreeNode(3);
         TreeNode two = new TreeNode(6);
@@ -22,7 +41,7 @@ public class Main {
         two.right = null;
 
         LowestCommonAncestor LCA = new LowestCommonAncestor();
-        LCA.lowestCommonAncestor(root,four,two);
+        LCA.lowestCommonAncestor(root,four,two);*/
 
 
        /* Scramble scr = new Scramble();
