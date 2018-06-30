@@ -6,11 +6,23 @@ import java.util.Arrays;
  */
 public class Main {
     public static void main(String[] args) {
+       Integer obj  = new Integer(2);
+
+        System.out.println(Integer.valueOf("123"));
+
+      /*  NumberOfIslands NOI = new NumberOfIslands();
+        char[][] grid = {{'1','1','1','1'},{'0','1','0','0'},{'1','1','1','1'}};
+        NOI.numIslands(grid);
 
         constructUsingInandPre CUI = new constructUsingInandPre();
+        ConstructusingPost CUP = new ConstructusingPost();
+
         int[] inorder = {9,3,15,20,2,7,4};
         int[] preorder = {3,9,20,15,7,2,4};
+        int[] postorder = {9,15,2,4,7,20,3};
         CUI.buildTree(preorder,inorder);
+        CUP.buildTree(inorder,postorder);*/
+
        /* DutchNationalFlag DNF = new DutchNationalFlag();
         int[] nums = {1,1,1,2,0,0,2};
         System.out.println(Arrays.toString(DNF.sortColors(nums)));
