@@ -1,14 +1,42 @@
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 /**
  * Created by huzaifa.aejaz on 5/18/18.
  */
 public class Main {
     public static void main(String[] args) {
-       Integer obj  = new Integer(2);
 
-        System.out.println(Integer.valueOf("123"));
+        wordLadder wl = new wordLadder();
+        String a = "hit";
+        String b = "cog";
+        Set<String> set = new HashSet<>();
+
+
+        set.add("akcd");
+        set.add("akcf");
+        set.add("aknd");
+        set.add("aknl");
+        set.add("akgl");
+        set.add("ekgl");
+        set.add("afgl");
+        set.add("afgx");
+        set.add("fgx");
+        set.add("efgx");
+        set.add("efgh");
+
+        List<String> list = new ArrayList<>();
+        list.add("hot");
+        list.add("dot");
+        list.add("dog");
+        list.add("lot");
+        list.add("log");
+        list.add("cog");
+
+        wl.ladderLength(a,b,list);
+
+     //  Integer obj  = new Integer(2);
+
+       // System.out.println(Integer.valueOf("123"));
 
       /*  NumberOfIslands NOI = new NumberOfIslands();
         char[][] grid = {{'1','1','1','1'},{'0','1','0','0'},{'1','1','1','1'}};
