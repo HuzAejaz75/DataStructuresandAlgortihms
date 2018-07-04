@@ -1,3 +1,5 @@
+import Graphs.*;
+
 import java.util.*;
 
 /**
@@ -5,8 +7,50 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
+        PalindromeCheck PC = new PalindromeCheck();
+        PC.countSubstrings("abaaca");
+       // String s = "avc";
+        //System.out.println(s.substring(0,1));
+     //   multipleStrings MS = new multipleStrings();
+     //   MS.multiply("123","123");
+        /*CS3 cs = new CS3();
+        int[][] courses = {{0,1}};
+        cs.findOrder(2,courses);*/
+       /* TaskScheduler TS = new TaskScheduler();
+        char[] tasks = {'A','A','A','B','B','C'};
+        TS.leastInterval(tasks,4);*/
+        /*GroupAnagrams GA = new GroupAnagrams();
+        String[] str = {"eat", "tea", "tan", "ate", "nat", "bat"};
+        GA.groupAnagrams(str);*/
+       /* SkyLineProblem SLP = new SkyLineProblem();
+        int[][] buildings = {{2,9,10},{3,7,15},{5,12,12},{15,20,10},{19,24,8}};
+        //[2 9 10], [3 7 15], [5 12 12], [15 20 10], [19 24 8]
+        SLP.getSkyline(buildings);*/
+       /* */
+    //    CourseSchedule2 CS2 = new CourseSchedule2();
+      //  int[][] preReq = {{1,0}};
+        //CS2.findOrder(2,preReq);
+/*
+        DepthFirstSearch DFS = new DepthFirstSearch();
+        List<String>  list= new ArrayList<>();
+        list.add("hot");
+        list.add("dot");
+        list.add("dog");
+        list.add("lot");
+        list.add("loc");
+        list.add("coc");
+        list.add("log");
+        list.add("cog");
+        DFS.findLadders("hit","cog",list);
 
-        wordLadder wl = new wordLadder();
+        */
+
+        CourseSchedule CS = new CourseSchedule();
+        //2, [[1,0]]
+
+        int[][] graphList = {{1,0},{2,0},{2,1}};
+        CS.canFinish(3, graphList);
+       /* wordLadder wl = new wordLadder();
         String a = "hit";
         String b = "cog";
         Set<String> set = new HashSet<>();
@@ -32,7 +76,7 @@ public class Main {
         list.add("log");
         list.add("cog");
 
-        wl.ladderLength(a,b,list);
+        wl.ladderLength(a,b,list);*/
 
      //  Integer obj  = new Integer(2);
 
@@ -191,4 +235,4 @@ public class Main {
 
 "--a-a-a-a--"
 2
- */
+*/
