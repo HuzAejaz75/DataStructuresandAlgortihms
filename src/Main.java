@@ -7,8 +7,54 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        PalindromeCheck PC = new PalindromeCheck();
-        PC.countSubstrings("abaaca");
+        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+        pq.add(12);
+        pq.add(13);
+        pq.add(3);
+        pq.add(7);
+        pq.add(17);
+        System.out.println(Arrays.toString(pq.toArray()));
+        pq.poll();
+        System.out.println(Arrays.toString(pq.toArray()));
+        pq.poll();
+        System.out.println(Arrays.toString(pq.toArray()));
+        pq.poll();
+        System.out.println(Arrays.toString(pq.toArray()));
+        /*wordBreak2 WB2 = new wordBreak2();
+        Set<String> words = new HashSet<>();
+        words.add("a");
+        words.add("grey");
+        words.add("hound");
+        words.add("agrey");
+        words.add("houn");
+        words.add("d");
+
+        WB2.wordBreak("agreyhound",words);*/
+       /* wordBreak wb = new wordBreak();
+        List<String> leet = new ArrayList<>();
+        leet.add("leet");
+        leet.add("code");
+        wb.wordBreak("leetcode",leet);*/
+       // String abc = "avc";
+       // System.out.println(abc.substring(abc.length(),abc.length()));
+      //  letterCasePermutation LCP = new letterCasePermutation();
+     //   LCP.letterCasePermutation("a2b2");
+        //    sqrt sq = new sqrt();
+         //   sq.mySqrt(400);
+       /* FindNumberOfSeq FNS = new FindNumberOfSeq();
+        int[] nums = {1,3,5,4,7};
+        FNS.findNumberOfLIS(nums);
+*/
+       /* LongestIncSequence LIS = new LongestIncSequence();
+        int[] nums = {100, 4, 200, 1, 3, 2};
+        longestincrSubSeque lcs = new longestincrSubSeque();
+        lcs.longestConsecutive(nums);*/
+        //LIS.longestConsecutive(nums);
+       // Manachers_Algorithm MA = new Manachers_Algorithm();
+     //   MA.countSubstrings("abaaca");
+
+        /*PalindromeCheck PC = new PalindromeCheck();
+        PC.countSubstrings("abaaca");*/
        // String s = "avc";
         //System.out.println(s.substring(0,1));
      //   multipleStrings MS = new multipleStrings();
@@ -46,8 +92,6 @@ public class Main {
         */
 
         CourseSchedule CS = new CourseSchedule();
-        //2, [[1,0]]
-
         int[][] graphList = {{1,0},{2,0},{2,1}};
         CS.canFinish(3, graphList);
        /* wordLadder wl = new wordLadder();
@@ -99,8 +143,8 @@ public class Main {
         int[] nums = {1,1,1,2,0,0,2};
         System.out.println(Arrays.toString(DNF.sortColors(nums)));
 */
-       // ExcelSheetName ESN = new ExcelSheetName();
-       // System.out.printf(ESN.convertToTitle(701));
+      //  ExcelSheetName ESN = new ExcelSheetName();
+      //  System.out.printf(ESN.convertToTitle(3));
         /*DecodeWays DW = new DecodeWays();
         DW.numDecodings("11245");*/
         /*SubtractBinary Sb = new SubtractBinary();
