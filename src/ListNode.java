@@ -3,8 +3,8 @@
  */
 public class ListNode {
     int val;
-    ListNode left;
-    ListNode right;
+    ListNode next;
+
     public ListNode(int x){
         val = x;
     }

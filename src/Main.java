@@ -1,3 +1,4 @@
+import Fundementals.BitWise;
 import Graphs.*;
 
 import java.util.*;
@@ -7,7 +8,82 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+
+        BrickWalls BW = new BrickWalls();
+        List<List<Integer>> result = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(2);
+        list.add(1);
+        result.add(list);
+
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(3);
+        list2.add(1);
+        list2.add(2);
+        result.add(list2);
+
+
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(2);
+        list3.add(4);
+        result.add(list3);
+
+        List<Integer> list4 = new ArrayList<>();
+        list4.add(3);
+        list4.add(1);
+        list4.add(2);
+        result.add(list4);
+
+        List<Integer> list5 = new ArrayList<>();
+        list5.add(1);
+        list5.add(3);
+        list5.add(1);
+        list5.add(1);
+        result.add(list5);
+
+
+        BW.leastBricks(result);
+       // BitWise BW = new BitWise();
+       // BW.andOper();
+      /* Dungeons Dg = new Dungeons();
+       int[][] du = {{-1,-1,-2,-7},{2,-6,8,-3},{3,5,-3,-5},{2,-7,-2,-2}};
+       Dg.calculateMinimumHP(du);
+        mergeKSorted mks = new mergeKSorted();
+
+        ListNode a1 = new ListNode(1);
+        ListNode a2 = new ListNode(3);
+        ListNode a3 = new ListNode(5);
+        ListNode a4 = new ListNode(7);
+        a1.next = a2;
+        a2.next = a3;
+        a3.next = a4;
+        a4.next = null;
+
+        ListNode b1 = new ListNode(2);
+        ListNode b2 = new ListNode(4);
+        ListNode b3 = new ListNode(6);
+        ListNode b4 = new ListNode(8);
+
+
+        b1.next=b2;
+        b2.next=b3;
+        b3.next=b4;
+        b4.next=null;
+
+        ListNode c1 = new ListNode(-3);
+        ListNode c2 = new ListNode(-1);
+        ListNode c3 = new ListNode(9);
+        ListNode c4 = new ListNode(10);
+        c1.next=c2;
+        c2.next=c3;
+        c3.next=c4;
+        c4.next=null;
+
+        ListNode[] arr = {a1,b1,c1};
+        mks.mergeKLists(arr);*/
+        /*PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
         pq.add(12);
         pq.add(13);
         pq.add(3);
@@ -19,7 +95,7 @@ public class Main {
         pq.poll();
         System.out.println(Arrays.toString(pq.toArray()));
         pq.poll();
-        System.out.println(Arrays.toString(pq.toArray()));
+        System.out.println(Arrays.toString(pq.toArray()));*/
         /*wordBreak2 WB2 = new wordBreak2();
         Set<String> words = new HashSet<>();
         words.add("a");
