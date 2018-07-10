@@ -8,8 +8,30 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
+        inorderTraversal ioT = new inorderTraversal();
+        TreeNode root = new TreeNode(5);
+        TreeNode one = new TreeNode(3);
+        TreeNode two = new TreeNode(6);
+        TreeNode three = new TreeNode(2);
+        TreeNode four = new TreeNode(4);
+        three.left = null;
+        three.right = null;
+        four.left= null;
+        four.right=null;
+        one.left = three;
+        one.right = four;
+        root.left = one;
+        root.right = two;
+        two.left = null;
+        two.right = null;
+        ioT.inorderTraversal(root);
 
-        BrickWalls BW = new BrickWalls();
+ //   productOfArrayExceptSelf pro = new productOfArrayExceptSelf();
+  //  int[] nums = {6,0,5,9};
+   // pro.productExceptSelf(nums);
+       // String str = "a";
+      //  System.out.println(str.startsWith("a"));
+      /*  BrickWalls BW = new BrickWalls();
         List<List<Integer>> result = new ArrayList<>();
         List<Integer> list = new ArrayList<>();
         list.add(1);
@@ -44,7 +66,7 @@ public class Main {
         result.add(list5);
 
 
-        BW.leastBricks(result);
+        BW.leastBricks(result);*/
        // BitWise BW = new BitWise();
        // BW.andOper();
       /* Dungeons Dg = new Dungeons();
@@ -96,14 +118,14 @@ public class Main {
         System.out.println(Arrays.toString(pq.toArray()));
         pq.poll();
         System.out.println(Arrays.toString(pq.toArray()));*/
-        /*wordBreak2 WB2 = new wordBreak2();
+      /*  wordBreak2 WB2 = new wordBreak2();
         Set<String> words = new HashSet<>();
         words.add("a");
         words.add("grey");
         words.add("hound");
         words.add("agrey");
         words.add("houn");
-        words.add("d");
+
 
         WB2.wordBreak("agreyhound",words);*/
        /* wordBreak wb = new wordBreak();
