@@ -8,7 +8,12 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        inorderTraversal ioT = new inorderTraversal();
+        fibonacci fib = new fibonacci();
+        System.out.println(fib.fibonacci(45));
+        /*InvalidParenthesis IP = new InvalidParenthesis();
+        IP.removeInvalidParentheses("(()))())");
+        */
+       /* inorderTraversal ioT = new inorderTraversal();
         TreeNode root = new TreeNode(5);
         TreeNode one = new TreeNode(3);
         TreeNode two = new TreeNode(6);
@@ -24,7 +29,7 @@ public class Main {
         root.right = two;
         two.left = null;
         two.right = null;
-        ioT.inorderTraversal(root);
+        ioT.inorderTraversal(root);*/
 
  //   productOfArrayExceptSelf pro = new productOfArrayExceptSelf();
   //  int[] nums = {6,0,5,9};
@@ -160,7 +165,7 @@ public class Main {
         /*CS3 cs = new CS3();
         int[][] courses = {{0,1}};
         cs.findOrder(2,courses);*/
-       /* TaskScheduler TS = new TaskScheduler();
+     /*  TaskScheduler TS = new TaskScheduler();
         char[] tasks = {'A','A','A','B','B','C'};
         TS.leastInterval(tasks,4);*/
         /*GroupAnagrams GA = new GroupAnagrams();
@@ -189,9 +194,9 @@ public class Main {
 
         */
 
-        CourseSchedule CS = new CourseSchedule();
+       /* CourseSchedule CS = new CourseSchedule();
         int[][] graphList = {{1,0},{2,0},{2,1}};
-        CS.canFinish(3, graphList);
+        CS.canFinish(3, graphList);*/
        /* wordLadder wl = new wordLadder();
         String a = "hit";
         String b = "cog";
@@ -357,7 +362,7 @@ public class Main {
         lr.get(3);
         lr.get(2);*/
 
-       LFUMethod2 cache = new LFUMethod2(2);
+      /* LFUMethod2 cache = new LFUMethod2(2);
         cache.set(1, 1);
         cache.set(2, 2);
         cache.get(1);       // returns 1
@@ -368,7 +373,7 @@ public class Main {
         cache.get(1);       // returns -1 (not found)
         cache.get(3);       // returns 3
         cache.get(4);
-
+*/
 
 
     }
