@@ -8,8 +8,15 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        fibonacci fib = new fibonacci();
-        System.out.println(fib.fibonacci(45));
+
+        FencePaint FP = new FencePaint();
+        FP.numWays(3,3);
+        /*WallsAndGates WG = new WallsAndGates();
+        int[][] matrix = {{2147483647,-1,0,2147483647},{2147483647,2147483647,2147483647,-1},{2147483647,-1,2147483647,-1},{0,-1,2147483647,2147483647}};
+        WG.wallsAndGates(matrix);*/
+
+       // fibonacci fib = new fibonacci();
+       // System.out.println(fib.fibonacci(45));
         /*InvalidParenthesis IP = new InvalidParenthesis();
         IP.removeInvalidParentheses("(()))())");
         */
