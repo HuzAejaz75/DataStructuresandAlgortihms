@@ -1,4 +1,6 @@
 import Fundementals.BitWise;
+import Fundementals.HeapSort;
+import Fundementals.MergeSort;
 import Graphs.*;
 
 import java.util.*;
@@ -9,8 +11,27 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        FencePaint FP = new FencePaint();
-        FP.numWays(3,3);
+        maxArea MA = new maxArea();
+        int[][] grid = {{0,1}};
+        MA.maxAreaOfIsland(grid);
+
+        regions rgn = new regions();
+        char[][] board = {{'X', 'X', 'X', 'X'},{'X', 'O' ,'O', 'X'}, {'X', 'X', 'O', 'X'},{'X', 'X' ,'X' ,'X'}};
+        rgn.solve(board);
+        //HammingDistance HD = new HammingDistance();
+       // HD.hammingDistance(15, 56);
+       /* HeapSort HS = new HeapSort();
+        int[] arr = {7,90,6,2,4};
+        HS.sort(arr);
+        System.out.println(Arrays.toString(arr));*/
+       /* MergeSort MS = new MergeSort();
+        int[] arr = {7,90,6,2,4,17,25,26,67,78};
+        MS.sort(arr,0,arr.length);*/
+       /* QuickSort QS = new QuickSort();
+        int[] arr = {7,90,6,2,4,17,25,26,67,78};
+        QS.quickMain(arr);*/
+       // FencePaint FP = new FencePaint();
+       // FP.numWays(3,3);
         /*WallsAndGates WG = new WallsAndGates();
         int[][] matrix = {{2147483647,-1,0,2147483647},{2147483647,2147483647,2147483647,-1},{2147483647,-1,2147483647,-1},{0,-1,2147483647,2147483647}};
         WG.wallsAndGates(matrix);*/
@@ -255,8 +276,8 @@ public class Main {
 */
       //  ExcelSheetName ESN = new ExcelSheetName();
       //  System.out.printf(ESN.convertToTitle(3));
-        /*DecodeWays DW = new DecodeWays();
-        DW.numDecodings("11245");*/
+     /*   DecodeWays DW = new DecodeWays();
+        DW.numDecodings("123");*/
         /*SubtractBinary Sb = new SubtractBinary();
         System.out.println(Sb.subtract("1","110"));
         int[] nums = {-4,-5};
