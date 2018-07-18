@@ -11,13 +11,32 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        maxArea MA = new maxArea();
+        convertBSTtoDLL CBD = new convertBSTtoDLL();
+        TreeNode root = new TreeNode(4);
+        TreeNode l1 = new TreeNode(2);
+        TreeNode r1 = new TreeNode(5);
+        TreeNode l2 = new TreeNode(1);
+        TreeNode r2 = new TreeNode(3);
+        root.left = l1;
+        root.right = r1;
+        l1.left=l2;
+        l1.right=r2;
+
+        r1.left = null;
+        r1.right = null;
+
+        CBD.treeToDoublyList(root);
+      /*  IntegerToWords itw = new IntegerToWords();
+        itw.numberToWords(1234566);
+
+*/
+        /*maxArea MA = new maxArea();
         int[][] grid = {{0,1}};
         MA.maxAreaOfIsland(grid);
 
         regions rgn = new regions();
         char[][] board = {{'X', 'X', 'X', 'X'},{'X', 'O' ,'O', 'X'}, {'X', 'X', 'O', 'X'},{'X', 'X' ,'X' ,'X'}};
-        rgn.solve(board);
+        rgn.solve(board);*/
         //HammingDistance HD = new HammingDistance();
        // HD.hammingDistance(15, 56);
        /* HeapSort HS = new HeapSort();
