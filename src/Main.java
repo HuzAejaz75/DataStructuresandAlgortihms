@@ -11,7 +11,26 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        convertBSTtoDLL CBD = new convertBSTtoDLL();
+        sparseMatrixMultiplication SPM = new sparseMatrixMultiplication();
+        int[][] A = {{1, 0, 0}, {-1, 0, 3}};
+        int[][] B = {{7, 0, 0}, { 0, 0, 0 }, {0, 0, 1 }};
+        SPM.multiply(A, B);
+       /* maxSubArray2 ms2 = new maxSubArray2();
+        int[] nums = {1, -1, 5, -2, 3};
+        ms2.subarraySum(nums, 3);*/
+       /* maxSubArray msa = new maxSubArray();
+        int[] nums = {1, -1, 5, -2, 3};
+        msa.maxSubArrayLen(nums,3);*/
+        /*remove_one_Invalid_parenthesis ROIP = new remove_one_Invalid_parenthesis();
+        ROIP.removeInvalidParentheses("((())()");*/
+      //  Solution sln = new Solution();
+      //  sln.wordCountEngine(" apple is an apple is an banana");
+
+       /* WordDictionary WD = new WordDictionary();
+        WD.addWord("a");
+        WD.search("a.");*/
+
+       /* convertBSTtoDLL CBD = new convertBSTtoDLL();
         TreeNode root = new TreeNode(4);
         TreeNode l1 = new TreeNode(2);
         TreeNode r1 = new TreeNode(5);
@@ -25,7 +44,7 @@ public class Main {
         r1.left = null;
         r1.right = null;
 
-        CBD.treeToDoublyList(root);
+        CBD.treeToDoublyList(root);*/
       /*  IntegerToWords itw = new IntegerToWords();
         itw.numberToWords(1234566);
 
@@ -57,9 +76,9 @@ public class Main {
 
        // fibonacci fib = new fibonacci();
        // System.out.println(fib.fibonacci(45));
-        /*InvalidParenthesis IP = new InvalidParenthesis();
-        IP.removeInvalidParentheses("(()))())");
-        */
+    //   InvalidParenthesis IP = new InvalidParenthesis();
+      //  IP.removeInvalidParentheses("(()))())");
+
        /* inorderTraversal ioT = new inorderTraversal();
         TreeNode root = new TreeNode(5);
         TreeNode one = new TreeNode(3);
@@ -295,8 +314,8 @@ public class Main {
 */
       //  ExcelSheetName ESN = new ExcelSheetName();
       //  System.out.printf(ESN.convertToTitle(3));
-     /*   DecodeWays DW = new DecodeWays();
-        DW.numDecodings("123");*/
+       DecodeWays DW = new DecodeWays();
+        DW.numDecodings("123");
         /*SubtractBinary Sb = new SubtractBinary();
         System.out.println(Sb.subtract("1","110"));
         int[] nums = {-4,-5};
