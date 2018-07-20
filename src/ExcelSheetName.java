@@ -1,7 +1,7 @@
 /**
  * Created by huzaifa.aejaz on 6/27/18.
  */
-public class ExcelSheetName {
+public class  ExcelSheetName {
     public String convertToTitle(int n) {
         StringBuilder result = new StringBuilder();
 

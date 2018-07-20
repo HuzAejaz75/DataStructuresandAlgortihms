@@ -11,10 +11,13 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        sparseMatrixMultiplication SPM = new sparseMatrixMultiplication();
+      //  RotateImage RI = new RotateImage();
+      //  int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
+       // RI.rotate(arr);
+     /*   sparseMatrixMultiplication SPM = new sparseMatrixMultiplication();
         int[][] A = {{1, 0, 0}, {-1, 0, 3}};
         int[][] B = {{7, 0, 0}, { 0, 0, 0 }, {0, 0, 1 }};
-        SPM.multiply(A, B);
+        SPM.multiply(A, B);*/
        /* maxSubArray2 ms2 = new maxSubArray2();
         int[] nums = {1, -1, 5, -2, 3};
         ms2.subarraySum(nums, 3);*/
@@ -199,11 +202,11 @@ public class Main {
 
 
         WB2.wordBreak("agreyhound",words);*/
-       /* wordBreak wb = new wordBreak();
+       wordBreak wb = new wordBreak();
         List<String> leet = new ArrayList<>();
         leet.add("leet");
         leet.add("code");
-        wb.wordBreak("leetcode",leet);*/
+        wb.wordBreak("leetcode",leet);
        // String abc = "avc";
        // System.out.println(abc.substring(abc.length(),abc.length()));
       //  letterCasePermutation LCP = new letterCasePermutation();
@@ -227,7 +230,7 @@ public class Main {
        // String s = "avc";
         //System.out.println(s.substring(0,1));
      //   multipleStrings MS = new multipleStrings();
-     //   MS.multiply("123","123");
+      //  MS.multiply("123","45");
         /*CS3 cs = new CS3();
         int[][] courses = {{0,1}};
         cs.findOrder(2,courses);*/
@@ -314,8 +317,8 @@ public class Main {
 */
       //  ExcelSheetName ESN = new ExcelSheetName();
       //  System.out.printf(ESN.convertToTitle(3));
-       DecodeWays DW = new DecodeWays();
-        DW.numDecodings("123");
+    //   DecodeWays DW = new DecodeWays();
+      //   DW.numDecodings("123");
         /*SubtractBinary Sb = new SubtractBinary();
         System.out.println(Sb.subtract("1","110"));
         int[] nums = {-4,-5};
