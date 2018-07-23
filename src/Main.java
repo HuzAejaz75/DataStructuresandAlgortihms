@@ -10,7 +10,11 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-
+        cornerRectangles CR = new cornerRectangles();
+        int[][] arr = {{1,1,1},{1,1,1},{1,1,1}};
+        CR.countCornerRectangles(arr);
+       // CountingBits CB = new CountingBits();
+      //  CB.countingBits(25);
       //  RotateImage RI = new RotateImage();
       //  int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
        // RI.rotate(arr);
@@ -202,11 +206,11 @@ public class Main {
 
 
         WB2.wordBreak("agreyhound",words);*/
-       wordBreak wb = new wordBreak();
+     /*  wordBreak wb = new wordBreak();
         List<String> leet = new ArrayList<>();
         leet.add("leet");
         leet.add("code");
-        wb.wordBreak("leetcode",leet);
+        wb.wordBreak("leetcode",leet);*/
        // String abc = "avc";
        // System.out.println(abc.substring(abc.length(),abc.length()));
       //  letterCasePermutation LCP = new letterCasePermutation();
