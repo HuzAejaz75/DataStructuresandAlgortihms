@@ -10,9 +10,10 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        cornerRectangles CR = new cornerRectangles();
+
+       /* cornerRectangles CR = new cornerRectangles();
         int[][] arr = {{1,1,1},{1,1,1},{1,1,1}};
-        CR.countCornerRectangles(arr);
+        CR.countCornerRectangles(arr);*/
        // CountingBits CB = new CountingBits();
       //  CB.countingBits(25);
       //  RotateImage RI = new RotateImage();
