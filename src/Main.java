@@ -11,8 +11,20 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-         Catalan ctln = new Catalan();
-         ctln.catalan(5);
+        PalindromicSubstring PS = new PalindromicSubstring();
+        PS.longestPalindrome("babad");
+     /*   MinStack MS = new MinStack();
+        MS.push(8);
+        MS.push(7);
+        MS.push(6);
+        MS.push(13);
+        MS.push(4);
+        while(MS.stack.size()>0){
+            System.out.println(MS.pop() + " min -> "+ MS.getMin());
+        }*/
+
+        /* Catalan ctln = new Catalan();
+         ctln.catalan(5);*/
        /* cornerRectangles CR = new cornerRectangles();
         int[][] arr = {{1,1,1},{1,1,1},{1,1,1}};
         CR.countCornerRectangles(arr);*/
