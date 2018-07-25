@@ -11,6 +11,8 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
+         Catalan ctln = new Catalan();
+         ctln.catalan(5);
        /* cornerRectangles CR = new cornerRectangles();
         int[][] arr = {{1,1,1},{1,1,1},{1,1,1}};
         CR.countCornerRectangles(arr);*/
