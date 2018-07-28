@@ -2,6 +2,8 @@ import Fundementals.BitWise;
 import Fundementals.HeapSort;
 import Fundementals.MergeSort;
 import Graphs.*;
+import jdk.nashorn.internal.runtime.regexp.joni.Regex;
+
 
 import java.util.*;
 
@@ -11,8 +13,17 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        PalindromicSubstring PS = new PalindromicSubstring();
-        PS.longestPalindrome("babad");
+        PalindromePermutation0n PP = new PalindromePermutation0n();
+        System.out.println(PP.canPermutePalindrome("code"));
+       /* LongestPalindrome LP = new LongestPalindrome();
+        LP.longestPalindrome("ghmmnxxxxzz");*/
+        //RegExpressionMatch Regex = new RegExpressionMatch();
+        //Regex.isMatch("aa", "a*");
+       /* maxSubArray3 MSA3 = new maxSubArray3();
+        int[] nums = {-5,10,2,-15,3,4,6,9,-10};
+        System.out.println(MSA3.maxSubArray(nums));*/
+       // PalindromicSubstring PS = new PalindromicSubstring();
+        //PS.longestPalindrome("babad");
      /*   MinStack MS = new MinStack();
         MS.push(8);
         MS.push(7);
