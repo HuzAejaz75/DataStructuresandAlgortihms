@@ -12,9 +12,57 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
+        LongestCommonSubSequence LCS = new LongestCommonSubSequence();
+        String str1 = "abcde";
+        String str2 = "zbcd";
+        char[] ch1 = str1.toCharArray();
+        char[] ch2 = str2.toCharArray();
+        LCS.lcs(ch1,ch2,ch1.length,ch2.length);
+        longestincreasingsubsequence LIS = new longestincreasingsubsequence();
+        int[] nums = {0,8,4,12,2};
+        LIS.LIS3(nums);
+       /* longestincreasingsubsequence lis = new longestincreasingsubsequence();
+        int[] nums = {0,8,4,12,2};
+        lis.lengthOfLIS(nums);*/
+      /*  UnionFindAccountsMerge UFA = new UnionFindAccountsMerge();
+        List<String> list1 = new ArrayList<>();
+        List<String> list2 = new ArrayList<>();
+        List<String> list3 = new ArrayList<>();
+        list1.add("john");
+        list1.add("john@gmail.com");
+        list1.add("john2@gmail.com");
 
-        PalindromePermutation0n PP = new PalindromePermutation0n();
-        System.out.println(PP.canPermutePalindrome("code"));
+        list2.add("john");
+        list2.add("johnb@gmail.com");
+        list2.add("johnc@gmail.com");
+
+        list3.add("john");
+        list3.add("john@gmail.com");
+        list3.add("john4@gmail.com");
+
+        List<List<String>> acc = new ArrayList<>();
+        acc.add(list1);
+        acc.add(list2);
+        acc.add(list3);
+
+        UFA.accountsMerge(acc);*/
+       /*int[] nums = {1,2,2,2,2,2,2,3,3,3,3,3,3,3,3};
+       for(int i = 0; i < 50; i++){
+           RandomPickIndex RPI = new RandomPickIndex(nums);
+           System.out.println("ha"+RPI.pick(3));
+       }
+*/
+      /*  int[] nums = {1,2,3,4,5,6,1,2,3,4,5,1,1,23,12,3,13,4,4,4,5,5,6,3,2,3,4,56,4,3,32,3,4,5,6,7,5,6,7,5,9,2,3,4};
+        RandomPickIndex RPI = new RandomPickIndex(nums);
+        RPI.pick(3);*/
+        /*SplitArrayLargestSum SPA = new SplitArrayLargestSum();
+        int[] nums = {7,2,5,10,8};
+        SPA.splitArray(nums,2);*/
+        /*GraphValidTree GVT = new GraphValidTree();
+        int[][] nums =  {{0,1}, {1,2}, {2,3}, {1,3}, {1,4}};
+        GVT.validTree(5, nums);*/
+       /* PalindromePermutation0n PP = new PalindromePermutation0n();
+        System.out.println(PP.canPermutePalindrome("code"));*/
        /* LongestPalindrome LP = new LongestPalindrome();
         LP.longestPalindrome("ghmmnxxxxzz");*/
         //RegExpressionMatch Regex = new RegExpressionMatch();
@@ -239,8 +287,8 @@ public class Main {
         wb.wordBreak("leetcode",leet);*/
        // String abc = "avc";
        // System.out.println(abc.substring(abc.length(),abc.length()));
-      //  letterCasePermutation LCP = new letterCasePermutation();
-     //   LCP.letterCasePermutation("a2b2");
+     //   letterCasePermutation LCP = new letterCasePermutation();
+       // LCP.letterCasePermutation2("a2b2");
         //    sqrt sq = new sqrt();
          //   sq.mySqrt(400);
        /* FindNumberOfSeq FNS = new FindNumberOfSeq();
