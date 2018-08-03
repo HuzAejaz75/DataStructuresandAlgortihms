@@ -12,7 +12,19 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
-        LongestCommonSubSequence LCS = new LongestCommonSubSequence();
+
+       NumberOfConnectedComponents NOC = new NumberOfConnectedComponents();
+       int[][] edges = {{2,3}, {1, 2}, {1,3}};
+       NOC.countComponents2(4, edges);
+       int[][] nums = {{1,0,0,1},{0,1,1,0},{0,1,1,1},{1,0,1,1}};
+        friendCircles FC = new friendCircles();
+        FC.findCircleNum(nums);
+       //Graph graph = new Graph(4);
+
+
+        //BFS_FIset1 BF1 = new BFS_FIset1();
+       // BF1.reconstructPath()
+       /* LongestCommonSubSequence LCS = new LongestCommonSubSequence();
         String str1 = "abcde";
         String str2 = "zbcd";
         char[] ch1 = str1.toCharArray();
@@ -20,7 +32,7 @@ public class Main {
         LCS.lcs(ch1,ch2,ch1.length,ch2.length);
         longestincreasingsubsequence LIS = new longestincreasingsubsequence();
         int[] nums = {0,8,4,12,2};
-        LIS.LIS3(nums);
+        LIS.LIS3(nums);*/
        /* longestincreasingsubsequence lis = new longestincreasingsubsequence();
         int[] nums = {0,8,4,12,2};
         lis.lengthOfLIS(nums);*/
