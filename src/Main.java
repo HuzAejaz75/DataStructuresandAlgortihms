@@ -13,12 +13,34 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-       NumberOfConnectedComponents NOC = new NumberOfConnectedComponents();
+        removeKDigits rk = new removeKDigits();
+        System.out.println(rk.removeKdigits2("10200", 1));
+       /* maximumSwap MS = new maximumSwap();
+
+        MS.maximumSwap2(98368);*/
+      /*  ReverseLinkedList RLL = new ReverseLinkedList();
+        ListNode l1 = new ListNode(1);
+        ListNode l2 = new ListNode(2);
+        ListNode l3 = new ListNode(3);
+        ListNode l4 = new ListNode(4);
+        ListNode l5 = new ListNode(5);
+        l1.next = l2;
+        l2.next = l3;
+        l3.next = l4;
+        l4.next = l5;
+        RLL.reverseList(l1);*/
+        /*ContinuousSubArraySum CSA = new ContinuousSubArraySum();
+        int[] nums = {1,1,3,4,19};
+        CSA.checkSubarraySum(nums,7);*/
+       /* CS1 cs1 = new CS1();
+        int[][] nums = {{1,0},{0,1}};
+        cs1.canFinish(2, nums);*/
+      /* NumberOfConnectedComponents NOC = new NumberOfConnectedComponents();
        int[][] edges = {{2,3}, {1, 2}, {1,3}};
        NOC.countComponents2(4, edges);
        int[][] nums = {{1,0,0,1},{0,1,1,0},{0,1,1,1},{1,0,1,1}};
         friendCircles FC = new friendCircles();
-        FC.findCircleNum(nums);
+        FC.findCircleNum(nums);*/
        //Graph graph = new Graph(4);
 
 
