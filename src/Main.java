@@ -13,8 +13,87 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        removeKDigits rk = new removeKDigits();
-        System.out.println(rk.removeKdigits2("10200", 1));
+        letterCasePermutation LCP = new letterCasePermutation();
+        LCP.letterCasePermutation2("a2b2");
+       /* SerializeAndDeserialize Snd = new SerializeAndDeserialize();
+        TreeNode node1 = new TreeNode(2);
+        TreeNode node1l = new TreeNode(3);
+        TreeNode node1r = new TreeNode(4);
+        node1.left = node1l;
+        node1.right = node1r;
+        String str = Snd.serialize(node1);
+        Snd.deserialize(str);*/
+
+       reorderList RL = new reorderList();
+        ListNode l1 = new ListNode(1);
+        ListNode l2 = new ListNode(2);
+        ListNode l3 = new ListNode(3);
+        ListNode l4 = new ListNode(4);
+        ListNode l5 = new ListNode(5);
+        ListNode l6 = new ListNode(6);
+        l1.next = l2;
+        l2.next = l3;
+        l3.next = l4;
+        l4.next = l5;
+        l5.next = l6;
+       RL.reorderList(l1);
+
+
+       /* KMP_Algorithm KMPA = new KMP_Algorithm();
+        KMPA.KMPSearch("abababd","ababcabcabababd");*/
+        /*NextGreaterPermutation NGP = new NextGreaterPermutation();
+        int[] nums = {1,2,3,6,4,5};
+        NGP.nextPermutation(nums);*/
+       /* PermutationInString PIS = new PermutationInString();
+        PIS.checkInclusion("ab","eidbaooo");*/
+        /*WindowSliding WS = new WindowSliding();
+        int[] nums = {1, 4, 2, 10, 2, 3, 1, 0, 20};
+        WS.maxSum(nums, nums.length,4);*/
+       /* BasicCalculator2 BS2 = new BasicCalculator2();
+        BS2.calc("13+2/2");*/
+       /* StrobogrammaticNumber SBG = new StrobogrammaticNumber();
+        SBG.findStrobogrammatic(4);*/
+       // LRU_Cache LR = new LRU_Cache();
+       // LR.
+      /*  int[] stones = {0,1,3,6,10,13,15,18};//{0,1,2,3,4,8,9,11};
+        FrogJump FJ = new FrogJump();
+        FJ.canCross(stones);*/
+       /* AlienDictionary AD = new AlienDictionary();
+        String[] words = {"wrt", "wrf",
+                "er",
+                "ett",
+                "rftt"};
+        AD.alienOrder(words);*/
+/*
+        convertBST CB = new convertBST();
+        TreeNode node = new TreeNode(20);
+        TreeNode node2 = new TreeNode(15);
+        TreeNode node3 = new TreeNode(10);
+        TreeNode node4 = new TreeNode(18);
+        TreeNode node5 = new TreeNode(25);
+        node.left = node2;
+        node.right = node5;
+        node2.left = node3;
+        node2.right = node4;
+
+        CB.treeToDoublyList(node);
+*/
+     /*   palindromePairs pp = new palindromePairs();
+        String[] str = {"bat", "tab", "cat"};
+        pp.palindromePairs(str);*/
+/*
+        subArraySumEqualsK SAA = new subArraySumEqualsK();
+        int[] nums = {1,2,3,4,1,2,2,1};
+        System.out.println(SAA.subarraySum(nums,5));*/
+       /* QuickSort QS = new QuickSort();
+        int[] nums = {3,2,1,5,6,4};
+        QS.quickMain(nums);
+
+        KthKargestElement KLE = new KthKargestElement();
+        int[] nums2 = {7,2,1,5,6,4};
+        KLE.findKthLargest(nums2,2);*/
+       /* removeKDigits rk = new removeKDigits();
+        System.out.println(rk.removeKdigits2("10200", 1));*.
        /* maximumSwap MS = new maximumSwap();
 
         MS.maximumSwap2(98368);*/
@@ -58,7 +137,7 @@ public class Main {
        /* longestincreasingsubsequence lis = new longestincreasingsubsequence();
         int[] nums = {0,8,4,12,2};
         lis.lengthOfLIS(nums);*/
-      /*  UnionFindAccountsMerge UFA = new UnionFindAccountsMerge();
+     /*   UnionFindAccountsMerge UFA = new UnionFindAccountsMerge();
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         List<String> list3 = new ArrayList<>();
@@ -321,8 +400,7 @@ public class Main {
         wb.wordBreak("leetcode",leet);*/
        // String abc = "avc";
        // System.out.println(abc.substring(abc.length(),abc.length()));
-     //   letterCasePermutation LCP = new letterCasePermutation();
-       // LCP.letterCasePermutation2("a2b2");
+
         //    sqrt sq = new sqrt();
          //   sq.mySqrt(400);
        /* FindNumberOfSeq FNS = new FindNumberOfSeq();
@@ -429,8 +507,8 @@ public class Main {
 */
       //  ExcelSheetName ESN = new ExcelSheetName();
       //  System.out.printf(ESN.convertToTitle(3));
-    //   DecodeWays DW = new DecodeWays();
-      //   DW.numDecodings("123");
+      /*DecodeWays DW = new DecodeWays();
+         DW.numDecodings("02321");*/
         /*SubtractBinary Sb = new SubtractBinary();
         System.out.println(Sb.subtract("1","110"));
         int[] nums = {-4,-5};
