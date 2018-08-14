@@ -12,9 +12,18 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
+        longestSubstringWithoutRepeatingCharacters lsc =  new longestSubstringWithoutRepeatingCharacters();
+        lsc.lengthOfLongestSubstring("abcaccb");
+/*
+        ringBuffer rb = new ringBuffer(3);
+        rb.enQueue(5);
+        rb.enQueue(6);
+        rb.enQueue(7);
+        System.out.println(rb.deQueue());
+        rb.enQueue(8);
 
         letterCasePermutation LCP = new letterCasePermutation();
-        LCP.letterCasePermutation2("a2b2");
+        LCP.letterCasePermutation2("a2b2");*/
        /* SerializeAndDeserialize Snd = new SerializeAndDeserialize();
         TreeNode node1 = new TreeNode(2);
         TreeNode node1l = new TreeNode(3);
@@ -58,12 +67,12 @@ public class Main {
       /*  int[] stones = {0,1,3,6,10,13,15,18};//{0,1,2,3,4,8,9,11};
         FrogJump FJ = new FrogJump();
         FJ.canCross(stones);*/
-       /* AlienDictionary AD = new AlienDictionary();
+        AlienDictionary AD = new AlienDictionary();
         String[] words = {"wrt", "wrf",
                 "er",
                 "ett",
                 "rftt"};
-        AD.alienOrder(words);*/
+        AD.alienOrder(words);
 /*
         convertBST CB = new convertBST();
         TreeNode node = new TreeNode(20);
@@ -78,9 +87,9 @@ public class Main {
 
         CB.treeToDoublyList(node);
 */
-     /*   palindromePairs pp = new palindromePairs();
+        palindromePairs pp = new palindromePairs();
         String[] str = {"bat", "tab", "cat"};
-        pp.palindromePairs(str);*/
+        pp.palindromePairs(str);
 /*
         subArraySumEqualsK SAA = new subArraySumEqualsK();
         int[] nums = {1,2,3,4,1,2,2,1};
@@ -137,7 +146,7 @@ public class Main {
        /* longestincreasingsubsequence lis = new longestincreasingsubsequence();
         int[] nums = {0,8,4,12,2};
         lis.lengthOfLIS(nums);*/
-     /*   UnionFindAccountsMerge UFA = new UnionFindAccountsMerge();
+       UnionFindAccountsMerge UFA = new UnionFindAccountsMerge();
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         List<String> list3 = new ArrayList<>();
@@ -158,7 +167,7 @@ public class Main {
         acc.add(list2);
         acc.add(list3);
 
-        UFA.accountsMerge(acc);*/
+        UFA.accountsMerge(acc);
        /*int[] nums = {1,2,2,2,2,2,2,3,3,3,3,3,3,3,3};
        for(int i = 0; i < 50; i++){
            RandomPickIndex RPI = new RandomPickIndex(nums);
@@ -517,7 +526,7 @@ public class Main {
         NA.sumRange(1,1);
         NA.sumRange(0,1);*/
 
-        /*
+
         TreeNode root = new TreeNode(5);
         TreeNode one = new TreeNode(3);
         TreeNode two = new TreeNode(6);
@@ -535,7 +544,7 @@ public class Main {
         two.right = null;
 
         LowestCommonAncestor LCA = new LowestCommonAncestor();
-        LCA.lowestCommonAncestor(root,four,two);*/
+        LCA.lowestCommonAncestor(root,four,two);
 
 
        /* Scramble scr = new Scramble();

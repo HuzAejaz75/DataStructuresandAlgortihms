@@ -80,7 +80,7 @@ public class AlienDictionary {
                         if (graph.containsKey(words[i].charAt(k))) {
                             List<Character> adjList = graph.get(words[i].charAt(k));
                             if (!adjList.contains(words[j].charAt(k)))
-                                graph.get(words[i].charAt(k)).add(words[j].charAt(k));
+                                adjList.add(words[j].charAt(k));
                         } else {
                             List<Character> adjList = new ArrayList<Character>();
                             adjList.add(words[j].charAt(k));
