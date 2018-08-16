@@ -12,6 +12,18 @@ import java.util.*;
  */
 public class Main {
     public static void main(String[] args) {
+
+        RandomizedCollection RC = new RandomizedCollection();
+        RC.insert(3);
+        RC.insert(4);
+        RC.insert(6);
+        RC.insert(5);
+        RC.insert(6);
+        RC.insert(6);
+
+        RC.remove(6);
+        RC.remove(4);
+
         longestSubstringWithoutRepeatingCharacters lsc =  new longestSubstringWithoutRepeatingCharacters();
         lsc.lengthOfLongestSubstring("abcaccb");
 /*
@@ -32,7 +44,7 @@ public class Main {
         node1.right = node1r;
         String str = Snd.serialize(node1);
         Snd.deserialize(str);*/
-
+/*
        reorderList RL = new reorderList();
         ListNode l1 = new ListNode(1);
         ListNode l2 = new ListNode(2);
@@ -46,7 +58,7 @@ public class Main {
         l4.next = l5;
         l5.next = l6;
        RL.reorderList(l1);
-
+*/
 
        /* KMP_Algorithm KMPA = new KMP_Algorithm();
         KMPA.KMPSearch("abababd","ababcabcabababd");*/
@@ -146,7 +158,7 @@ public class Main {
        /* longestincreasingsubsequence lis = new longestincreasingsubsequence();
         int[] nums = {0,8,4,12,2};
         lis.lengthOfLIS(nums);*/
-       UnionFindAccountsMerge UFA = new UnionFindAccountsMerge();
+     /*  UnionFindAccountsMerge UFA = new UnionFindAccountsMerge();
         List<String> list1 = new ArrayList<>();
         List<String> list2 = new ArrayList<>();
         List<String> list3 = new ArrayList<>();
@@ -167,7 +179,7 @@ public class Main {
         acc.add(list2);
         acc.add(list3);
 
-        UFA.accountsMerge(acc);
+        UFA.accountsMerge(acc);*/
        /*int[] nums = {1,2,2,2,2,2,2,3,3,3,3,3,3,3,3};
        for(int i = 0; i < 50; i++){
            RandomPickIndex RPI = new RandomPickIndex(nums);
@@ -526,7 +538,7 @@ public class Main {
         NA.sumRange(1,1);
         NA.sumRange(0,1);*/
 
-
+/*
         TreeNode root = new TreeNode(5);
         TreeNode one = new TreeNode(3);
         TreeNode two = new TreeNode(6);
@@ -544,7 +556,8 @@ public class Main {
         two.right = null;
 
         LowestCommonAncestor LCA = new LowestCommonAncestor();
-        LCA.lowestCommonAncestor(root,four,two);
+        LCA.lowestCommonAncestor(root,four,two);*/
+
 
 
        /* Scramble scr = new Scramble();
