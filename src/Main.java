@@ -13,7 +13,46 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        RandomizedCollection RC = new RandomizedCollection();
+    /*    courseSchedule2 CS2 = new courseSchedule2();
+        int[][] preReq = new int[][] {{0,3},{2,3},{1,0},{1,2}};
+        CS2.findOrder(4, preReq);*/
+    /*    courseSchedule1 CS1 = new courseSchedule1();
+      int[][] preReq = new int[][] {{0,3},{2,3},{1,0},{1,2}};
+        CS1.canFinish(4, preReq);
+        */
+       /* largestRectangle lr = new largestRectangle();
+        int[] heights = {6, 7, 5, 2, 4, 5, 9, 3};
+        lr.largestRectangleArea(heights);*/
+       /* largestNumber LN = new largestNumber();
+        int[] nums = {943,94,56,32,3,45,67};
+        LN.largestNumber(nums);*/
+        removeKDigits rkd = new removeKDigits();
+        System.out.println(rkd.removeKdigits("10200", 1));
+/*
+        List<Integer> list1 = new ArrayList<>();
+        list1.add(1);
+        list1.add(2);
+        list1.add(3);
+        list1.add(4);
+        List<Integer> list2 = new ArrayList<>();
+        list2.add(5);
+        list2.add(6);
+        List<Integer> list3 = new ArrayList<>();
+        list3.add(9);
+        list3.add(10);
+        list3.add(11);
+
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(list1);
+        result.add(list2);
+        result.add(list3);
+
+        zigzagIterator ZZI = new zigzagIterator(result);
+        while(ZZI.hasNext()){
+            System.out.println(ZZI.next());
+        }
+*/
+       /* RandomizedCollection RC = new RandomizedCollection();
         RC.insert(3);
         RC.insert(4);
         RC.insert(6);
@@ -25,7 +64,7 @@ public class Main {
         RC.remove(4);
 
         longestSubstringWithoutRepeatingCharacters lsc =  new longestSubstringWithoutRepeatingCharacters();
-        lsc.lengthOfLongestSubstring("abcaccb");
+        lsc.lengthOfLongestSubstring("abcaccb");*/
 /*
         ringBuffer rb = new ringBuffer(3);
         rb.enQueue(5);
@@ -79,12 +118,12 @@ public class Main {
       /*  int[] stones = {0,1,3,6,10,13,15,18};//{0,1,2,3,4,8,9,11};
         FrogJump FJ = new FrogJump();
         FJ.canCross(stones);*/
-        AlienDictionary AD = new AlienDictionary();
+       /* AlienDictionary AD = new AlienDictionary();
         String[] words = {"wrt", "wrf",
                 "er",
                 "ett",
                 "rftt"};
-        AD.alienOrder(words);
+        AD.alienOrder(words);*/
 /*
         convertBST CB = new convertBST();
         TreeNode node = new TreeNode(20);
@@ -99,9 +138,9 @@ public class Main {
 
         CB.treeToDoublyList(node);
 */
-        palindromePairs pp = new palindromePairs();
+      /*  palindromePairs pp = new palindromePairs();
         String[] str = {"bat", "tab", "cat"};
-        pp.palindromePairs(str);
+        pp.palindromePairs(str);*/
 /*
         subArraySumEqualsK SAA = new subArraySumEqualsK();
         int[] nums = {1,2,3,4,1,2,2,1};

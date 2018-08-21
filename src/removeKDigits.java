@@ -26,44 +26,4 @@ public class removeKDigits {
         while (idx < digits && stk[idx] == '0') idx++;
         return idx == digits? "0": new String(stk, idx, digits - idx);
     }
-    public String removeKdigits2(String num, int k) {
-        List<Character> list = new ArrayList<>();
-        for(int i = 0; i < num.length(); i++)
-        {
-            list.add(num.charAt(i));
-        }
-
-        if(list.size()==k){
-            return "0";
-        }
-        int size = list.size();
-        int range = size - k;
-        for(int i = 0; i < k; i++)
-        {
-
-            int indx = search(list, 0, k);
-            list.remove(indx);
-
-        }
-        String res = "";
-        if(list.size() > 0)
-        {
-            for(Character ch : list){
-                if(res.length()==0 && ch =='0') continue;
-                res += ch;
-            }
-        }
-        return res;
-    }
-    private int search(List<Character> list, int start, int end){
-        int max = Integer.MIN_VALUE;
-        int maxIndex = 0;
-        for(int i = 0; i < Math.min(list.size(), end) ; i++){
-            if(list.get(i)-'0' > max){
-                maxIndex = i;
-                max = list.get(i)-'0';
-            }
-        }
-        return maxIndex;
-    }
 }
