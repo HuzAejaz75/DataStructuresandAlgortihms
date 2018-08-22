@@ -24,7 +24,8 @@ public class courseSchedule2 {
         int count = 0;
         // every time a node is visited reduce the count of its adjacency vertex by 1
         for(int i = 0 ; i < numCourses ; i++){
-            if(indegree[i] == 0){
+            if(indegree[i] == 0)
+            {
                 visited[count] = i;
                 queue.offer(i);
                 count++;

@@ -13,21 +13,25 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-    /*    courseSchedule2 CS2 = new courseSchedule2();
+       /* CountingBits CB = new CountingBits();
+        CB.countingBits2(25);
+
+       courseSchedule2 CS2 = new courseSchedule2();
         int[][] preReq = new int[][] {{0,3},{2,3},{1,0},{1,2}};
-        CS2.findOrder(4, preReq);*/
-    /*    courseSchedule1 CS1 = new courseSchedule1();
-      int[][] preReq = new int[][] {{0,3},{2,3},{1,0},{1,2}};
-        CS1.canFinish(4, preReq);
-        */
+        CS2.findOrder(4, preReq);
+       courseSchedule1 CS1 = new courseSchedule1();*/
+
+     // int[][] preReq = new int[][] {{0,3},{2,3},{1,0},{1,2}};
+     //   CS1.canFinish(4, preReq);
+
        /* largestRectangle lr = new largestRectangle();
         int[] heights = {6, 7, 5, 2, 4, 5, 9, 3};
         lr.largestRectangleArea(heights);*/
        /* largestNumber LN = new largestNumber();
         int[] nums = {943,94,56,32,3,45,67};
         LN.largestNumber(nums);*/
-        removeKDigits rkd = new removeKDigits();
-        System.out.println(rkd.removeKdigits("10200", 1));
+     //   removeKDigits rkd = new removeKDigits();
+       // System.out.println(rkd.removeKdigits("10200", 1));
 /*
         List<Integer> list1 = new ArrayList<>();
         list1.add(1);
@@ -260,8 +264,7 @@ public class Main {
        /* cornerRectangles CR = new cornerRectangles();
         int[][] arr = {{1,1,1},{1,1,1},{1,1,1}};
         CR.countCornerRectangles(arr);*/
-       // CountingBits CB = new CountingBits();
-      //  CB.countingBits(25);
+
       //  RotateImage RI = new RotateImage();
       //  int[][] arr = {{1,2,3},{4,5,6},{7,8,9}};
        // RI.rotate(arr);
@@ -394,9 +397,11 @@ public class Main {
         BW.leastBricks(result);*/
        // BitWise BW = new BitWise();
        // BW.andOper();
-      /* Dungeons Dg = new Dungeons();
+       Dungeons Dg = new Dungeons();
        int[][] du = {{-1,-1,-2,-7},{2,-6,8,-3},{3,5,-3,-5},{2,-7,-2,-2}};
        Dg.calculateMinimumHP(du);
+
+       /*
         mergeKSorted mks = new mergeKSorted();
 
         ListNode a1 = new ListNode(1);

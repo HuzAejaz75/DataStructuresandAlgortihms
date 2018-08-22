@@ -12,11 +12,11 @@ public class courseSchedule1 {
 
         for (int i=0; i<prerequisites.length; i++)
         {
-            int ready = prerequisites[i][0];
-            int pre = prerequisites[i][1];
-            if (matrix[pre][ready] == 0)
-                indegree[ready]++; //duplicate case
-            matrix[pre][ready] = 1;
+            int from = prerequisites[i][0];
+            int to = prerequisites[i][1];
+            if (matrix[from][to] == 0)
+                indegree[to]++; //duplicate case
+            matrix[from][to] = 1;
         }
 
         int count = 0;
