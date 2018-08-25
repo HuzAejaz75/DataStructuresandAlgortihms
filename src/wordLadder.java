@@ -15,14 +15,17 @@ public class wordLadder
         }
         queue.add(beginWord);
         visited.remove(beginWord);
-        while (!queue.isEmpty()){
+        while (!queue.isEmpty())
+        {
             String v = queue.poll();
             List<String> neighbours = getAdj(v,visited);
-            for(String w:neighbours){
+            for(String w:neighbours)
+            {
                 distance.put(w,distance.get(v)+1);
                 queue.add(w);
                 visited.remove(w);
-                if(w.equals(endWord)){
+                if(w.equals(endWord))
+                {
                     return distance.get(w);
                 }
             }

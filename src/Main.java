@@ -13,6 +13,24 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
+       /* DuplicateSubTreesInBT DST = new DuplicateSubTreesInBT();
+        TreeNode node = new TreeNode(1);
+        TreeNode node2 = new TreeNode(2);
+        TreeNode node3 = new TreeNode(4);
+        TreeNode node4 = new TreeNode(3);
+        TreeNode node5 = new TreeNode(2);
+        TreeNode node6 = new TreeNode(4);
+        TreeNode node7  = new TreeNode(4);
+        node.left = node2;
+        node.right = node4;
+        node2.left = node3;
+        node2.right = null;
+        node4.left = node5;
+        node4.right = node6;
+        node5.left = node7;
+        BoundaryOfBinaryTree BBT = new BoundaryOfBinaryTree();
+        BBT.boundaryOfBinaryTree(node);
+        DST.findDuplicateSubtrees(node);*/
        /* CountingBits CB = new CountingBits();
         CB.countingBits2(25);
 
@@ -397,9 +415,9 @@ public class Main {
         BW.leastBricks(result);*/
        // BitWise BW = new BitWise();
        // BW.andOper();
-       Dungeons Dg = new Dungeons();
+       /*Dungeons Dg = new Dungeons();
        int[][] du = {{-1,-1,-2,-7},{2,-6,8,-3},{3,5,-3,-5},{2,-7,-2,-2}};
-       Dg.calculateMinimumHP(du);
+       Dg.calculateMinimumHP(du);*/
 
        /*
         mergeKSorted mks = new mergeKSorted();
@@ -521,7 +539,7 @@ public class Main {
        /* CourseSchedule CS = new CourseSchedule();
         int[][] graphList = {{1,0},{2,0},{2,1}};
         CS.canFinish(3, graphList);*/
-       /* wordLadder wl = new wordLadder();
+        wordLadder wl = new wordLadder();
         String a = "hit";
         String b = "cog";
         Set<String> set = new HashSet<>();
@@ -547,7 +565,7 @@ public class Main {
         list.add("log");
         list.add("cog");
 
-        wl.ladderLength(a,b,list);*/
+        wl.ladderLength(a,b,list);
 
      //  Integer obj  = new Integer(2);
 
