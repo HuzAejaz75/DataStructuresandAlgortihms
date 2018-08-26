@@ -1,17 +1,28 @@
-import Fundementals.BitWise;
-import Fundementals.HeapSort;
-import Fundementals.MergeSort;
-import Graphs.*;
-import jdk.nashorn.internal.runtime.regexp.joni.Regex;
-
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by huzaifa.aejaz on 5/18/18.
  */
 public class Main {
     public static void main(String[] args) {
+
+        String word = "leetcode";
+        char[] arr = word.toCharArray();
+        List<Character> list = new ArrayList<>();
+
+        for(char ch : arr){
+            if(list.size()==0 || !list.contains(ch)){
+                list.add(ch);
+            }
+            else{
+                list.remove(ch);
+            }
+        }
+        for(char cha : list){
+            System.out.println(cha);
+        }
 
        /* DuplicateSubTreesInBT DST = new DuplicateSubTreesInBT();
         TreeNode node = new TreeNode(1);
@@ -539,7 +550,7 @@ public class Main {
        /* CourseSchedule CS = new CourseSchedule();
         int[][] graphList = {{1,0},{2,0},{2,1}};
         CS.canFinish(3, graphList);*/
-        wordLadder wl = new wordLadder();
+      /*  wordLadder wl = new wordLadder();
         String a = "hit";
         String b = "cog";
         Set<String> set = new HashSet<>();
@@ -565,7 +576,7 @@ public class Main {
         list.add("log");
         list.add("cog");
 
-        wl.ladderLength(a,b,list);
+        wl.ladderLength(a,b,list);*/
 
      //  Integer obj  = new Integer(2);
 
