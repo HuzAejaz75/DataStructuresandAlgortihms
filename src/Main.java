@@ -8,7 +8,21 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        String word = "leetcode";
+        TrappingRain TR = new TrappingRain();
+        int[] height = {0,1,0,2,1,0,1,3,2,1,2,1};
+        TR.trap(height);
+        /*findAllAnagrams FAA = new findAllAnagrams();
+        FAA.findAnagrams("cbaebabacd","abc");
+        anagram ana = new anagram();
+        String[] strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
+        ana.findAnagrams(strs);*/
+      /*  TopKFrequentWords TKF = new TopKFrequentWords();
+        String[] words = {"boon","boon","boon","sun","sun","earth","zen","zen","zen","cag","cag","cag","cag"};
+        TKF.topKFrequent(words, 2);*/
+       /* BTS_cooldown BS = new BTS_cooldown();
+        int[] num = {6,5,4,2,1,16,19};
+        BS.maxProfit(num);*/
+      /*  String word = "leetcode";
         char[] arr = word.toCharArray();
         List<Character> list = new ArrayList<>();
 
@@ -23,7 +37,7 @@ public class Main {
         for(char cha : list){
             System.out.println(cha);
         }
-
+*/
        /* DuplicateSubTreesInBT DST = new DuplicateSubTreesInBT();
         TreeNode node = new TreeNode(1);
         TreeNode node2 = new TreeNode(2);
