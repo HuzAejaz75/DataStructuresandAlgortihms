@@ -1,16 +1,47 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 /**
  * Created by huzaifa.aejaz on 5/18/18.
  */
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
+       /* CountAndSay CAS = new CountAndSay();
+        CAS.countAndSay(4);*/
+        /*Date now = new Date("2016");
 
-        TrappingRain TR = new TrappingRain();
+        SimpleDateFormat simpleDateformat = new SimpleDateFormat("E"); // the day of the week abbreviated
+        System.out.println(simpleDateformat.format(now));
+*/
+       /* CalculateDayLight CDL = new CalculateDayLight();
+        CDL.DayLight("2016-04-04");*/
+      /*  TreeNode root = new TreeNode(5);
+        TreeNode one = new TreeNode(3);
+        TreeNode two = new TreeNode(6);
+        TreeNode three = new TreeNode(2);
+        TreeNode four = new TreeNode(4);
+        three.left = null;
+        three.right = null;
+        four.left= null;
+        four.right=null;
+        one.left = three;
+        one.right = four;
+        root.left = one;
+        root.right = two;
+        two.left = null;
+        two.right = null;
+        LCA_BS lcabs = new LCA_BS();
+
+        lcabs.lowestCommonAncestor(root,three,four);*/
+      /*  HammingDistance HD = new HammingDistance();
+        HD.HammingDistance(3,14);*/
+        /*TrappingRain TR = new TrappingRain();
         int[] height = {0,1,0,2,1,0,1,3,2,1,2,1};
-        TR.trap(height);
+        TR.trap(height);*/
         /*findAllAnagrams FAA = new findAllAnagrams();
         FAA.findAnagrams("cbaebabacd","abc");
         anagram ana = new anagram();
