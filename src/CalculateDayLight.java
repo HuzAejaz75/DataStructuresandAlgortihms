@@ -1,54 +1,87 @@
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.util.Calendar;
-import java.util.Date;
 
-/**
- * Created by huzaifa.aejaz on 9/29/18.
- */
+
 public class CalculateDayLight {
+    static int MAX_VALID_YR = 9999;
+    static int MIN_VALID_YR = 1800;
+
     public void DayLight(String date){
-        String[] split = date.split("-");
+        String[] split = date.split("-");//Get the day, month and year from the input
         int year = Integer.parseInt(split[0]);
         int month = Integer.parseInt(split[1]);
         int day = Integer.parseInt(split[2]);
-        boolean daylight = false;
-        if(year >=2007) {
-                if(month == 3){
-                   int secondSunday = marchCalculate(month, year,day);
-                   if(day < secondSunday){
-                       daylight = false;
-                   }
-                   else{
-                       daylight = true;
-                   }
-                }
-                else
-                if(month==11){
-                    int firstSunday = novemberCalculate(month,year,day);
-                    if(day < firstSunday){
-                        daylight = false;
-                    }
-                    else{
+        boolean daylight = false;//Used to decide whether daylight savings need to be applied
+        if(isValidDate(day,month,year)) {
+            if (year >= 2007) {
+                if (month == 3) {//For the month of March calculate second sunday
+                    int secondSunday = marchCalculate(month, year, day);
+                    if (day >= secondSunday) {
                         daylight = true;
                     }
-                }
-                else
-                    if(month >3 && month < 11){
+                } else if (month == 11) {//For the month of November calculate first sunday
+                    int firstSunday = novemberCalculate(month, year, day);
+                    if (day <= firstSunday) {
                         daylight = true;
                     }
+                } else if (month > 3 && month < 11) {
+                    daylight = true;
+                }
+                if(daylight){
+                    System.out.println(year+"-"+month+"-"+day+" 07:00 UTC");
+                }
                 else{
-                        daylight = false;
-                    }
+                    System.out.println(year+"-"+month+"-"+day+" 08:00 UTC");
+                }
+            }
+            else{
+                System.out.println("Please provide dates from 2007 onwards");
+            }
         }
-        if(daylight){
-            System.out.println(year+"-"+month+"-"+day+" 07:00 UTC");
+        else {
+            System.out.println("invalid date");
         }
-        else{
-            System.out.println(year+"-"+month+"-"+day+" 08:00 UTC");
+    }
+
+    private boolean isValidDate(int d, int m, int y)
+    {
+        // If year, month and day
+        // are not in given range
+        if (y > MAX_VALID_YR ||
+                y < MIN_VALID_YR)
+            return false;
+        if (m < 1 || m > 12)
+            return false;
+        if (d < 1 || d > 31)
+            return false;
+
+        // Handle February month
+        // with leap year
+        if (m == 2)
+        {
+            if (isLeap(y))
+                return (d <= 29);
+            else
+                return (d <= 28);
         }
+
+        // Months of April, June,
+        // Sept and Nov must have
+        // number of days less than
+        // or equal to 30.
+        if (m == 4 || m == 6 || m == 9 || m == 11)
+            return (d <= 30);
+
+        return true;
+    }
+    private boolean isLeap(int year)
+    {
+        // Return true if year is
+        // a multiple of 4 and not
+        // multiple of 100.
+        // OR year is multiple of 400.
+        return (((year % 4 == 0) &&
+                (year % 100 != 0)) ||
+                (year % 400 == 0));
     }
 
     private int marchCalculate(int month, int year, int date){

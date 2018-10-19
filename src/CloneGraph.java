@@ -1,6 +1,25 @@
+import java.util.HashMap;
+
 /**
  * Created by huzaifa.aejaz on 7/17/18.
  */
 public class CloneGraph {
+    private HashMap<Integer, UndirectedGraphNode> map = new HashMap<>();
+    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
+        return clone(node);
+    }
 
+    private UndirectedGraphNode clone(UndirectedGraphNode node) {
+        if (node == null) return null;
+
+        if (map.containsKey(node.label)) {
+            return map.get(node.label);
+        }
+        UndirectedGraphNode clone = new UndirectedGraphNode(node.label);
+        map.put(clone.label, clone);
+        for (UndirectedGraphNode neighbor : node.neighbors) {
+            clone.neighbors.add(clone(neighbor));
+        }
+        return clone;
+    }
 }

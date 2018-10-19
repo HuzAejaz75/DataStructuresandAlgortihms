@@ -10,6 +10,38 @@ import java.util.List;
  */
 public class Main {
     public static void main(String[] args) throws ParseException {
+
+        networkDelayTime ndt = new networkDelayTime();
+        int[][] times = {{2,1,1},{2,3,1},{3,4,1}};
+        int N = 4;
+        int K = 2;
+        ndt.networkDelayTime(times,N,K);
+       /* UndirectedGraphNode one = new UndirectedGraphNode(1);
+        UndirectedGraphNode two = new UndirectedGraphNode(2);
+        UndirectedGraphNode three = new UndirectedGraphNode(3);
+        one.neighbors.add(two);
+        one.neighbors.add(three);
+        two.neighbors.add(one);
+        two.neighbors.add(three);
+        three.neighbors.add(three);
+
+        CloneGraph CG = new CloneGraph();
+        CG.cloneGraph(one);*/
+       /* wordBreak wb = new wordBreak();
+        List<String> leet = new ArrayList<>();
+        leet.add("leet");
+        leet.add("code");
+        wb.wordBreak("leetcode",leet);
+
+        ListNode one = new ListNode(1);
+        ListNode two = new ListNode(2);
+        ListNode three = new ListNode(1);
+        ListNode four = new ListNode(1);
+        one.next = two;
+        two.next = three;
+        three.next = four;
+        palindromeReverse PR = new palindromeReverse();
+        PR.isPalindrome(one);*/
        /* CountAndSay CAS = new CountAndSay();
         CAS.countAndSay(4);*/
         /*Date now = new Date("2016");
@@ -18,7 +50,7 @@ public class Main {
         System.out.println(simpleDateformat.format(now));
 */
        /* CalculateDayLight CDL = new CalculateDayLight();
-        CDL.DayLight("2016-04-04");*/
+        CDL.DayLight("2006-02-2");*/
       /*  TreeNode root = new TreeNode(5);
         TreeNode one = new TreeNode(3);
         TreeNode two = new TreeNode(6);
@@ -532,11 +564,7 @@ public class Main {
 
 
         WB2.wordBreak("agreyhound",words);*/
-     /*  wordBreak wb = new wordBreak();
-        List<String> leet = new ArrayList<>();
-        leet.add("leet");
-        leet.add("code");
-        wb.wordBreak("leetcode",leet);*/
+
        // String abc = "avc";
        // System.out.println(abc.substring(abc.length(),abc.length()));
 
