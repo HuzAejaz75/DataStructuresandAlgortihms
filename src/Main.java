@@ -11,11 +11,15 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws ParseException {
 
-        networkDelayTime ndt = new networkDelayTime();
+        findWordInBoard Fwi = new findWordInBoard();
+        //char[][] board = {{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
+        char[][] board = {{'a'},{'a'}};
+        Fwi.exist(board, "aaa");
+      /*  networkDelayTime ndt = new networkDelayTime();
         int[][] times = {{2,1,1},{2,3,1},{3,4,1}};
         int N = 4;
         int K = 2;
-        ndt.networkDelayTime(times,N,K);
+        ndt.networkDelayTime(times,N,K);*/
        /* UndirectedGraphNode one = new UndirectedGraphNode(1);
         UndirectedGraphNode two = new UndirectedGraphNode(2);
         UndirectedGraphNode three = new UndirectedGraphNode(3);
