@@ -56,7 +56,7 @@ public class findWordInBoard {
 
             return helper(board, word, row+1,col,index+1) ||
                     helper(board, word, row-1,col,index+1)||
-                    helper(board, word, row,col+1,index+1) ||
+                    helper(board, word, row,col+1,index+1)||
                     helper(board, word, row,col-1,index+1);
 
 
